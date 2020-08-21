@@ -1,3 +1,5 @@
+
+
 <script>
 export default {
 	onLaunch: function() {
@@ -20,4 +22,8 @@ export default {
 	src: url('/static/uni.ttf');
 }
 /* #endif */
+</style>
+
+<style lang="scss">
+@import "uview-ui/index.scss";
 </style>
