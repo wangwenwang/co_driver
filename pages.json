@@ -1,17 +1,86 @@
 {
+	"easycom": {
+		"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+	},
 	"pages": [{
-		"path": "pages/index/index",
-		"style": {
-			"navigationBarTitleText": "uni-ui基础项目"
+			"path": "pages/login/index",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+
+		{
+			"path": "pages/login/code",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+
+		{
+			"path": "kt_components/tabbar/index",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+
+		{
+			"path": "pages/tabbar2/index",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+
+		{
+			"path": "pages/tabbar3/index",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+
+		{
+			"path": "pages/tabbar4/index",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+
+		{
+			"path": "pages/tabbar5/index",
+			"style": {
+				"navigationBarTitleText": ""
+			}
 		}
-	}],
+	],
 	"globalStyle": {
 		"navigationBarTextStyle": "white",
 		"navigationBarTitleText": "uni-app",
 		"navigationBarBackgroundColor": "#007AFF",
 		"backgroundColor": "#FFFFFF"
 	},
-	"easycom": {
-		"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+	"tabBar": {
+		"list": [
+			{
+				"pagePath": "/pages/index/index"
+			},
+			{
+				"pagePath": "/pages/tabbar2/index"
+			},
+			{
+				"pagePath": "pages/tabbar3/index"
+			},
+			{
+				"pagePath": "pages/tabbar4/index"
+			},
+			{
+				"pagePath": "pages/tabbar5/index"
+			}
+		]
 	}
 }

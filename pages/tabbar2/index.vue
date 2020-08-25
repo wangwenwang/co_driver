@@ -1,10 +1,6 @@
 <template>
 	<view class="wrap">
-		<view class="u-page">
-			<!-- 所有内容的容器 -->
-			11111111
-		</view>
-		fds1111111111
+		fds2222222222
 		<u-tabbar :list="$store.state.vuex_tabbar"></u-tabbar>
 	</view>
 </template>

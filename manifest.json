@@ -53,6 +53,12 @@
     "h5" : {
         "devServer" : {
             "port" : 8083
-        }
+        },
+        "template" : "",
+        "router" : {
+            "mode" : "hash",
+            "base" : ""
+        },
+        "title" : "22"
     }
 }
