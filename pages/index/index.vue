@@ -1,13 +1,13 @@
 <template>
 	<view class="wrap">
 		<view class="top"></view>
-			<view class="fds"></view>
 		<view class="content">
 			<view class="title">欢迎登录车配匹配</view>
-			<u-input class="tel-i" v-model="tel" type="number" placeholder-style="font-size:35rpx;color:#C0C4CC;"
+			<u-input v-model="tel" type="number" placeholder-style="font-size:35rpx;color:#C0C4CC;"
 			 placeholder="请输入手机号" />
 			<u-line color="#999999" />
-			<u-input class="pwd-i" v-if="login_type == 2" v-model="value" type="password" placeholder-style="font-size:35rpx;color:#C0C4CC;"
+			<view v-if="login_type == 2" style="height: 50rpx;"></view>
+			<u-input v-if="login_type == 2" v-model="value" type="password" placeholder-style="font-size:35rpx;color:#C0C4CC;"
 			 placeholder="请输入密码" />
 			<u-line v-if="login_type == 2" color="#999999" />
 			<view v-if="login_type == 1" class="tips">未注册的手机号验证后自动创建车货匹配账号</view>
@@ -87,11 +87,6 @@
 	.wrap {
 		font-size: 28rpx;
 		height: 80%;
-			.fds{
-				width: 20rpx;
-				height: 20rpx;
-				background-color: red;
-			}
 
 		.content {
 			width: 600rpx;
@@ -105,17 +100,6 @@
 				font-size: 60rpx;
 				font-weight: 500;
 				margin-bottom: 100rpx;
-			}
-			
-			.tel-i{
-				width: 600rpx;
-				height: 90rpx;
-			}
-			
-			.pwd-i{
-				width: 600rpx;
-				height: 190rpx;
-				margin-top: 50rpx;
 			}
 
 			.tips {
